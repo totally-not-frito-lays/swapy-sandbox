@@ -3,11 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    >
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.colors.min.css"
+    >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>Swapy Sandbox</title>
+    <script type="module" src="src/main.ts"></script>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+    <main class="container">
+      <h1>Swap Sandbox</h1>
+      <section>
+        <h2>Simple demo</h2>
+        <div class="swp-container">
+          <div class="section-1" data-swapy-slot="foo">
+            <div class="content-a" data-swapy-item="a">
+              <!-- Your content for content-a goes here -->
+               <article class="pico-background-red-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum natus delectus laudantium quas repellat earum, assumenda dolorum ad accusantium similique, tenetur, nemo a culpa architecto itaque enim possimus eaque commodi?</article>
+            </div>
+          </div>
+        
+          <div class="section-2" data-swapy-slot="bar">
+            <div class="content-b" data-swapy-item="b">
+              <!-- Your content for content-b goes here -->
+              <article class="pico-background-blue-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum natus delectus laudantium quas repellat earum, assumenda dolorum ad accusantium similique, tenetur, nemo a culpa architecto itaque enim possimus eaque commodi?</article>
+              <div class="handle" data-swapy-handle></div>
+            </div>
+          </div>
+        
+          <div class="section-3" data-swapy-slot="baz">
+            <div class="content-c" data-swapy-item="c">
+              <article class="pico-background-green-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum natus delectus laudantium quas repellat earum, assumenda dolorum ad accusantium similique, tenetur, nemo a culpa architecto itaque enim possimus eaque commodi?</article>
+              <!-- Your content for content-c goes here -->
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <h2></h2>
+      </section>
+    </main>
   </body>
 </html>

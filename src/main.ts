@@ -1,24 +1,38 @@
-import './style.css'
-import typescriptLogo from './typescript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.ts'
+import { createSwapy } from 'swapy'
 
-document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://www.typescriptlang.org/" target="_blank">
-      <img src="${typescriptLogo}" class="logo vanilla" alt="TypeScript logo" />
-    </a>
-    <h1>Vite + TypeScript</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite and TypeScript logos to learn more
-    </p>
-  </div>
-`
+const container = document.querySelector('.swp-container')
 
-setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
+const swapy = createSwapy(container, {
+  // animation: 'dynamic' // or spring or none
+  animation: 'spring',
+})
+
+swapy.onSwap((event) => {
+  console.log(event.data.object);
+  console.log(event.data.array);
+  console.log(event.data.map);
+
+  // event.data.object:
+  // {
+  //   'foo': 'a',
+  //   'bar': 'b',
+  //   'baz': 'c'
+  // }
+
+  // event.data.array:
+  // [
+  //   { slot: 'foo', item: 'a' },
+  //   { slot: 'bar', item: 'b' },
+  //   { slot: 'baz', item: 'c' }
+  // ]
+
+  // event.data.map:
+  // Map(3) {
+  // 'foo' => 'a',
+  // 'bar' => 'b',
+  // 'baz' => 'c'
+  // }
+})
+
+// You can disable and enable it anytime you want
+swapy.enable(true)
