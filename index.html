@@ -20,17 +20,19 @@
       <h1>Swap Sandbox</h1>
       <section>
         <h2>Simple demo</h2>
+        <p>
+          It seems like the article class + pico is less performant on laptop 
+          browsers than on mobile browsers.
+        </p>
         <div class="swp-container">
           <div class="section-1" data-swapy-slot="foo">
             <div class="content-a" data-swapy-item="a">
-              <!-- Your content for content-a goes here -->
                <article class="pico-background-red-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum natus delectus laudantium quas repellat earum, assumenda dolorum ad accusantium similique, tenetur, nemo a culpa architecto itaque enim possimus eaque commodi?</article>
             </div>
           </div>
         
           <div class="section-2" data-swapy-slot="bar">
             <div class="content-b" data-swapy-item="b">
-              <!-- Your content for content-b goes here -->
               <article class="pico-background-blue-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum natus delectus laudantium quas repellat earum, assumenda dolorum ad accusantium similique, tenetur, nemo a culpa architecto itaque enim possimus eaque commodi?</article>
               <div class="handle" data-swapy-handle></div>
             </div>
@@ -39,13 +41,71 @@
           <div class="section-3" data-swapy-slot="baz">
             <div class="content-c" data-swapy-item="c">
               <article class="pico-background-green-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum natus delectus laudantium quas repellat earum, assumenda dolorum ad accusantium similique, tenetur, nemo a culpa architecto itaque enim possimus eaque commodi?</article>
-              <!-- Your content for content-c goes here -->
             </div>
           </div>
         </div>
       </section>
       <section>
-        <h2></h2>
+        <h2>original demo</h2>
+        <p>
+          The example from the 
+          <a href="https://github.com/TahaSh/swapy/tree/main/examples">official repo</a>
+          demonstrates disabling swapping within a specific swapy container 
+          and also shows us how we might use onSwap, onSwapStart, and onSwapEnd.
+        </p>
+        <div class="enable-input">
+          <label for="enable">Enable</label> <input id="enable" type="checkbox" />
+        </div>
+        <div class="container container-1">
+          <div class="slot a" data-swapy-slot="1">
+            <div class="item a" data-swapy-item="a">
+              <div class="handle" data-swapy-handle></div>
+              <div>A</div>
+            </div>
+          </div>
+          <div class="second-row">
+            <div class="slot b" data-swapy-slot="2">
+              <!-- <div class="item b" data-swapy-item="b">
+                <div>B</div>
+              </div> -->
+            </div>
+            <div class="slot c" data-swapy-slot="3">
+              <div class="item c" data-swapy-item="c">
+                <div>C</div>
+              </div>
+            </div>
+          </div>
+          <div class="slot d" data-swapy-slot="4">
+            <div class="item d" data-swapy-item="d">
+              <div>D</div>
+            </div>
+          </div>
+        </div>
+        <div class="container container-2">
+          <div class="slot a" data-swapy-slot="1">
+            <div class="item a" data-swapy-item="a">
+              <div class="handle" data-swapy-handle></div>
+              <div>A</div>
+            </div>
+          </div>
+          <div class="second-row">
+            <div class="slot b" data-swapy-slot="2">
+              <!-- <div class="item b" data-swapy-item="b">
+                <div>B</div>
+              </div> -->
+            </div>
+            <div class="slot c" data-swapy-slot="3">
+              <div class="item c" data-swapy-item="c">
+                <div>C</div>
+              </div>
+            </div>
+          </div>
+          <div class="slot d" data-swapy-slot="4">
+            <div class="item d" data-swapy-item="d">
+              <div>D</div>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
   </body>
