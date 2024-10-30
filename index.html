@@ -22,25 +22,34 @@
         <h2>Simple demo</h2>
         <section>
           <p>
-            It seems like the article class + pico is less performant on laptop 
-            browsers than on mobile browsers.
+            You can drag each of the text cards around and even live update the 
+            contents of each box! This might be useful for building drag and 
+            drop learning interactables. Just a thought >:)
           </p>
           <div class="enable-input" style="display: flex; align-items: center;">
-            <label for="enable" style="margin-right: 8px;">Enable</label>
+            <label for="enable" style="margin-right: 8px;">Enable dragging</label>
             <input id="enable" type="checkbox" />
           </div>
         </section>
         <div class="swp-container">
           <div class="section-1" data-swapy-slot="foo">
             <div class="content-a" data-swapy-item="a">
-               <article class="pico-background-red-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum natus delectus laudantium quas repellat earum, assumenda dolorum ad accusantium similique, tenetur, nemo a culpa architecto itaque enim possimus eaque commodi?</article>
+               <article class="pico-background-red-600">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum 
+                natus delectus laudantium quas repellat earum, assumenda dolorum
+                ad accusantium similique, tenetur, nemo a culpa architecto 
+                itaque enim possimus eaque commodi?
+              </article>
             </div>
           </div>
         
           <div class="section-2" data-swapy-slot="bar">
             <div class="content-b" data-swapy-item="b">
               <article class="pico-background-blue-600">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum natus delectus laudantium quas repellat earum, assumenda dolorum ad accusantium similique, tenetur, nemo a culpa architecto itaque enim possimus eaque commodi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Harum natus delectus laudantium quas repellat earum, assumenda 
+                dolorum ad accusantium similique, tenetur, nemo a culpa 
+                architecto itaque enim possimus eaque commodi?
                 <!-- <div class="handle" data-swapy-handle></div>
                   <article>I am a handle</article>
                 </div> -->
@@ -50,11 +59,32 @@
         
           <div class="section-3" data-swapy-slot="baz">
             <div class="content-c" data-swapy-item="c">
-              <article class="pico-background-green-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum natus delectus laudantium quas repellat earum, assumenda dolorum ad accusantium similique, tenetur, nemo a culpa architecto itaque enim possimus eaque commodi?</article>
+              <article class="pico-background-green-600">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum 
+                natus delectus laudantium quas repellat earum, assumenda dolorum
+                ad accusantium similique, tenetur, nemo a culpa architecto 
+                itaque enim possimus eaque commodi?
+              </article>
             </div>
           </div>
         </div>
       </section>
+      <footer>
+        <article>
+          <p>
+            This project was made with the following technologies and little bit
+            of 🍕
+          </p>
+          <ul>
+            <li><cite><a href="https://vite.dev/">Vite</a></cite></li>
+            <li><cite><a href="https://swapy.tahazsh.com/">Swapy</a></cite></li>
+            <li><cite><a href="https://blog.seancoughlin.me/deploying-to-github-pages-using-gh-pages">GH-Pages</a></cite></li>
+            <li><cite><a href="https://picocss.com/">Picocss</a></cite></li>
+          </ul>
+          <hr>
+          <cite><a href="https://github.com/totally-not-frito-lays/swapy-sandbox/">Repo</a></cite>
+        </article>
+      </footer>
     </main>
   </body>
 </html>
